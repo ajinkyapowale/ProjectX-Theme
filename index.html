@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+
+    <title>ProjectX</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="includes/bootstrap-4.1.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Third-party styles -->
+      <link href="includes/fontawesome-free-5.0.13/css/fontawesome-all.min.css" rel="stylesheet">
+      <link href="includes/jcf/css/theme-minimal/jcf.css" rel="stylesheet">
+      
+    <!-- Custom styles -->
+      <link href="css/flatit.css" rel="stylesheet">
+      <link href="css/theme.css" rel="stylesheet">
+      
+      <style>
+          .row{
+              margin:0px 0px 20px 0px;
+          }
+          
+      </style>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+      <a class="navbar-brand text-uppercase" href="#" >Brand Name</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+        <form class="form-inline mt-2 mt-md-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <i class="fa fa-search text-light search-icbtn"></i>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container">
+      <!--<div class="jumbotron">
+        <h1>Navbar example</h1>
+        <p class="lead">This example is a quick exercise to illustrate how fixed to top navbar works. As you scroll, it will remain fixed to the top of your browser's viewport.</p>
+        <a class="btn btn-lg btn-primary" href="../../components/navbar/" role="button">View navbar docs &raquo;</a>
+      </div>-->
+        
+        <section class="demo-checkboxes">
+		<h2>Checkboxes and radios</h2>
+		<p>Focused and pressed states are also handled.</p>
+		<div class="col">
+			<div class="row">
+				<input type="checkbox" id="chk1" />
+				<label title="Unchecked state" for="chk1">Unchecked</label>
+			</div>	
+			<div class="row">
+				<input type="checkbox" checked="checked" id="chk2" />
+				<label title="Checked state" for="chk2">Checked</label>
+			</div>
+			<div class="row">
+				<input type="checkbox" disabled="disabled" id="chk3" />
+				<label title="Checked state" for="chk3">Disabled</label>
+			</div>
+			<div class="row">
+				<input type="checkbox" disabled="disabled" checked="checked" id="chk4" />
+				<label title="Checked state" for="chk4">Disabled checked</label>
+			</div>
+		</div>
+		<div class="col">
+			<div class="row">
+				<input type="radio" name="rtest" id="rad1" />
+				<label for="rad1" title="Unchecked state">Unchecked</label>
+			</div>
+			<div class="row">
+				<input type="radio" name="rtest" checked="checked" id="rad2" data-jcf='{"wrapNative": true}' />
+				<label for="rad2" title="Checked state">Checked</label>
+			</div>
+			<div class="row">
+				<input type="radio" name="rtest" disabled="disabled" checked="checked" id="rad3" />
+				<label for="rad3" title="Disabled state">Disabled</label>
+			</div>
+		</div>
+        <div class="row">
+				<select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
+					<option value="v1">Custom drop in &lt;body&gt;</option>
+					<option value="v2">Option 1</option>
+					<option value="v3">Option 2</option>
+					<option value="v4">Option 3</option>
+					<option value="v5">Option 4</option>
+					<optgroup label="test">
+						<option value="v6">Option 5</option>
+						<option value="v7">Option 6</option>
+					</optgroup>
+					<option value="v7">Option 7</option>
+					<option value="v8">Option 8</option>
+					<option value="v9" disabled>Option 9 (disabled)</option>
+					<option value="v10" disabled>Option 10 (disabled)</option>
+					<option value="v11">Option 11</option>
+					<option value="v12">Option 12</option>
+					<option value="v13">Option 13</option>
+					<option value="v14">Option 14</option>
+					<option value="v15">Option 15</option>
+					<option value="v16">Option 16</option>
+					<option value="v17">Option 17</option>
+					<option value="v18">Option 18</option>
+					<option value="v19">Option 19</option>
+					<option value="v20">Option 20</option>
+					<option value="v21">Option 21</option>
+					<option value="v22">Option 22</option>
+					<option value="v23">Option 23</option>
+					<option value="v24">Option 24</option>
+					<optgroup label="last 26">
+						<option value="v25">Option 25</option>
+						<option value="v26">Option 26</option>
+					</optgroup>
+				</select>
+			</div>
+	</section>
+        
+    <section>
+        <h2>Buttons</h2>
+        <div class="row">
+            <div class="col-sm">
+               <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-secondary">Secondary</button>
+                <button type="button" class="btn btn-success">Success</button>
+                <button type="button" class="btn btn-danger">Danger</button>
+                <button type="button" class="btn btn-warning">Warning</button>
+                <button type="button" class="btn btn-info">Info</button>
+                <button type="button" class="btn btn-light">Light</button>
+                <button type="button" class="btn btn-dark">Dark</button>
+                <button type="button" class="btn btn-link">Link</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+               <button type="button" class="btn btn-primary" disabled>Primary</button>
+                <button type="button" class="btn btn-secondary" disabled>Secondary</button>
+                <button type="button" class="btn btn-success" disabled>Success</button>
+                <button type="button" class="btn btn-danger" disabled>Danger</button>
+                <button type="button" class="btn btn-warning" disabled>Warning</button>
+                <button type="button" class="btn btn-info" disabled>Info</button>
+                <button type="button" class="btn btn-light" disabled>Light</button>
+                <button type="button" class="btn btn-dark" disabled>Dark</button>
+                <button type="button" class="btn btn-link" disabled>Link</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <a class="btn btn-primary" href="#" role="button">Link</a>
+                <button class="btn btn-primary" type="submit">Button</button>
+                <input class="btn btn-primary" type="button" value="Input">
+                <input class="btn btn-primary" type="submit" value="Submit">
+                <input class="btn btn-primary" type="reset" value="Reset">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <button type="button" class="btn btn-outline-primary">Primary</button>
+                <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                <button type="button" class="btn btn-outline-success">Success</button>
+                <button type="button" class="btn btn-outline-danger">Danger</button>
+                <button type="button" class="btn btn-outline-warning">Warning</button>
+                <button type="button" class="btn btn-outline-info">Info</button>
+                <button type="button" class="btn btn-outline-light">Light</button>
+                <button type="button" class="btn btn-outline-dark">Dark</button>
+            </div>
+        </div>
+         <div class="row">
+            <div class="col-sm">
+                <button type="button" class="btn btn-outline-primary " disabled>Primary</button>
+                <button type="button" class="btn btn-outline-secondary" disabled>Secondary</button>
+                <button type="button" class="btn btn-outline-success" disabled>Success</button>
+                <button type="button" class="btn btn-outline-danger" disabled>Danger</button>
+                <button type="button" class="btn btn-outline-warning" disabled>Warning</button>
+                <button type="button" class="btn btn-outline-info" disabled>Info</button>
+                <button type="button" class="btn btn-outline-light" disabled>Light</button>
+                <button type="button" class="btn btn-outline-dark" disabled>Dark</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <button type="button" class="btn btn-primary btn-lg">Large button</button>
+                <button type="button" class="btn btn-secondary btn-lg">Large button</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <button type="button" class="btn btn-primary btn-sm">Small button</button>
+                <button type="button" class="btn btn-secondary btn-sm">Small button</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                 <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+                <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
+            </div>
+        </div>
+        
+        
+    </section>
+        
+    </main>
+
+    <!-- import js
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!--<script src="../../../../assets/js/vendor/popper.min.js"></script>-->
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./includes/bootstrap-4.1.1/js/bootstrap.min.js"></script>
+	<script src="./includes/jcf/js/jcf.js"></script>
+    <script src="./includes/jcf/js/jcf.select.js"></script>  
+    <script src="./includes/jcf/js/jcf.radio.js"></script>  
+    <script src="./includes/jcf/js/jcf.checkbox.js"></script>
+    <script>
+		$(function() {
+			jcf.replaceAll();
+		});
+	</script>
+  </body>
+</html>
