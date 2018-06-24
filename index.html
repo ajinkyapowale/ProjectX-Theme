@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="">
+    <link rel="icon" href="./images/icons/Square/web_hi_res_512.png ">
 
     <title>ProjectX</title>
 
@@ -14,6 +14,7 @@
 
     <!-- Third-party styles -->
       <link href="includes/fontawesome-free-5.0.13/css/fontawesome-all.min.css" rel="stylesheet">
+     <!-- <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">-->
       <link href="includes/jcf/css/theme-minimal/jcf.css" rel="stylesheet">
       
     <!-- Custom styles -->
@@ -31,7 +32,8 @@
   <body>
 
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
-      <a class="navbar-brand text-uppercase" href="#" >Brand Name</a>
+      <a class="navbar-brand text-uppercase" href="#" >
+          <img src="./images/icons/NoBackground/web_hi_res_512.png" />smartBiz </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -48,8 +50,7 @@
           </li>
         </ul>
         <form class="form-inline mt-2 mt-md-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          <i class="fa fa-search text-light search-icbtn"></i>
+            <input class="form-control mr-sm-2 nav-search" type="text" placeholder="&#xF002;" aria-label="Search" />
         </form>
       </div>
     </nav>
@@ -97,8 +98,24 @@
 			</div>
 		</div>
         <div class="row">
-				<select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
-					<option value="v1">Custom drop in &lt;body&gt;</option>
+            <div class="form-group col-sm-3">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <div class="form-group col-sm-3">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group col-sm-3">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control error" id="exampleInputEmail1" aria-describedby="emailError" placeholder="Enter email">
+                <small id="emailError" class="form-error"> Please enter email address.</small>
+            </div>
+            <div class="form-group col-sm-3">
+                <label id="option" for="option">Option</label>
+				<select data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}' class="form-control">
+					<option value="v1">Select Option</option>
 					<option value="v2">Option 1</option>
 					<option value="v3">Option 2</option>
 					<option value="v4">Option 3</option>
@@ -130,7 +147,8 @@
 						<option value="v26">Option 26</option>
 					</optgroup>
 				</select>
-			</div>
+            </div>
+        </div>
 	</section>
         
     <section>
@@ -213,8 +231,120 @@
             </div>
         </div>
         
+        <div class="row">
+            <div class="col-sm">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal-action">
+                  Launch Action modal
+                </button>
+                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal-info">
+                  Launch Info modal
+                </button>
+                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal-warning">
+                  Launch Warning modal
+                </button>
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal-danger">
+                  Launch Danger modal
+                </button>
+                
+                
+                <!-- Info Modal -->
+                <div class="modal fade" id="exampleModal-action" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        ...
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Info Modal -->
+                <div class="modal fade" id="exampleModal-info" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel"> <i class="fa fa-info-circle text-info"></i> Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        ...
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-info" data-dismiss="modal">OK</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Warning Modal -->
+                <div class="modal fade" id="exampleModal-warning" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel"> <i class="fa fa-exclamation-triangle text-warning"></i> Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        ...
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-warning" data-dismiss="modal">OK</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Danger Modal -->
+                <div class="modal fade" id="exampleModal-danger" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel"> <i class="fa fa-exclamation-circle text-danger"></i> Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        ...
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">OK</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
         
     </section>
+        
+        <!-- <div class="alert alert-success alert-dismissible fade in">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <strong>Success!</strong> This alert box could indicate a successful or positive action.
+          </div>
+         <div class="alert alert-warning alert-dismissible fade in">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+          </div>
+          <div class="alert alert-danger alert-dismissible fade in">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+          </div>-->
         
     </main>
 
